@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "section aside"
+        "article article"
+        "footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    width: 300px;
+    height: 550px;
+    border: 5px solid black; 
+}
+
+header {
+    grid-area: header;
+    background-color: #1E90FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #87CEFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+section {
+    grid-area: section;
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+article {
+    grid-area: article;
+    background-color: #FF69B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #F0FFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #87CEFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+h1, h2, p {
+    color: white;
+}
