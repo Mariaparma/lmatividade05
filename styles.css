@@ -1,94 +1,54 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
 
-body {
-    font-family: Arial, sans-serif;
+  header {
+    background-color:aqua;
+    height: 20vh;
+    margin: 5px 5px 0 5px;
+  }
+
+  nav {
+    background-color:aquamarine;
+    height: 20vh;
+    margin: 5px 5px 0 5px;
+  }
+
+  main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
+    text-align: center;
+  }
 
-.container {
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "nav"
-        "section aside"
-        "article article"
-        "footer";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    width: 300px;
-    height: 550px;
-    border: 5px solid black; 
-}
-
-header {
-    grid-area: header;
-    background-color: #1E90FF;
+  div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: 5px solid black;
-}
+    flex-direction: column;
+    width: calc(80% - 10px);
+  }
 
-nav {
-    grid-area: nav;
-    background-color: #87CEFA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: 5px solid black;
-}
+  section {
+    background-color:rgb(215, 94, 245);
+    height: 30vh;
+    margin: 5px 5px 0 5px;
+  }
 
-section {
-    grid-area: section;
-    background-color: #FFD700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: 5px solid black;
-}
+  article {
+    background-color: rgb(255, 70, 199);
+    height: 30vh;
+    margin: 5px 5px 0 5px;
+  }
 
-article {
-    grid-area: article;
-    background-color: #FF69B4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: 5px solid black;
-}
+  aside {
+    background-color: rgb(224, 67, 67);
+    width: calc(25% - 15px);
+    margin: 5px 5px 0 0;
+  }
 
-aside {
-    grid-area: aside;
-    background-color: #F0FFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: 5px solid black;
-}
-
-footer {
-    grid-area: footer;
-    background-color: #87CEFA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: 5px solid black;
-}
-
-h1, h2, p {
-    color: white;
-}
+  footer {
+    background-color: rgb(51, 133, 255);
+    height: 20vh;
+    margin: 5px;
+  }
